@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>New Tab</title> <!-- Match the text Chrome shows before loading the new tab -->
+    <style>
+        body {
+            font-family: 'Monaco', monospace;
+            color: #444;
+            font-weight: 200;
+            opacity: 0.9;
+            font-size: 18px;
+            -webkit-user-select: none;
+        }
+
+        h3 {
+            text-align: center;
+            color: #aaa;
+            font-weight: 300;
+        }
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .small {
+            font-size: 12px;
+        }
+        li {
+            margin: 20px;
+        }
+
+        .small a:visited {
+            color: #444;
+        }
+        .small a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        a:visited {
+            color: #66a;
+        }
+        .original-new-tab {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px;
+            cursor: pointer;
+            line-height: 13px;
+        }
+
+        input {
+            width: 100%;
+            height: 20px;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.png" /> <!-- Match the favicon Chrome shows before loading the new tab -->
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>recently visited</h3>
+        <input type"text" class="fuzzy"></input>
+        <ul class="history"></ul>
+    </div>
+</body>
+</html>
